@@ -1,9 +1,4 @@
 <div class="container">
-    <ul class="breadcrumb">
-        <li><a href="index.php"><i class="fa fa-home"></i></a></li>
-        <li><a href="#">Account</a></li>
-        <li><a href="index.php?page=register">Register</a></li>
-    </ul>
     <div class="row">
         <div class="col-sm-3 hidden-xs column-left" id="column-left">
             <div class="column-block">

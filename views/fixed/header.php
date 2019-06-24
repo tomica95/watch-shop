@@ -37,13 +37,13 @@
         <div class="navbar-collapse">
           <ul class="main-navigation">
             <li><a href="index.php"   class="parent"  >Home</a> </li>
-            <li><a href="category.html"   class="parent"  >Collection</a> </li>
-            <li><a href="category.html"   class="parent"  >Women</a> </li>
-            <li><a href="category.html"   class="parent"  >Men</a> </li>
-            <li><a href="category.html"   class="parent"  >Accessories</a> </li>
+            <li><a href="index.php?page=shop"   class="parent"  >Collection</a> </li>
+            <li><a href="index.php?page=shop"   class="parent"  >Women</a> </li>
+            <li><a href="index.php?page=shop"   class="parent"  >Men</a> </li>
+            <li><a href="index.php?page=shop"   class="parent"  >Accessories</a> </li>
             <li><a href="#" class="active parent">Page</a>
               <ul>
-                <li><a href="category.html">Category Page</a></li>
+                <li><a href="index.php?page=shop">Category Page</a></li>
                 <li><a href="cart.html">Cart Page</a></li>
                 <li><a href="checkout.html">Checkout Page</a></li>
                 <li><a href="blog.html" >Blog Page</a></li>

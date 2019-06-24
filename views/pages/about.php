@@ -1,8 +1,4 @@
 <div class="container">
-  <ul class="breadcrumb">
-      <li><a href="index.php"><i class="fa fa-home"></i></a></li>
-      <li><a href="index.php?page=about">About Us</a></li>
-    </ul>
   <div class="row">
     <div class="wwd">
       <div class="col-sm-6"><img class="img-responsive" src="image/blog/blog_4.jpg" alt="#"></div>

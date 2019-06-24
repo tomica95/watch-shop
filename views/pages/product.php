@@ -1,9 +1,4 @@
 <div class="container">
-  <ul class="breadcrumb">
-    <li><a href="index.php"><i class="fa fa-home"></i></a></li>
-    <li><a href="category.html">Desktops</a></li>
-    <li><a href="#">lorem ippsum dolor dummy</a></li>
-  </ul>
   <div class="row">
     <div id="column-left" class="col-sm-3 hidden-xs column-left">
       <div class="column-block">

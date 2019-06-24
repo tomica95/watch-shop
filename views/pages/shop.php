@@ -1,8 +1,4 @@
 <div class="container">
-  <ul class="breadcrumb">
-    <li><a href="index.php"><i class="fa fa-home"></i></a></li>
-    <li><a href="category.html">Electronics</a></li>
-  </ul>
   <div class="row">
     <div id="column-left" class="col-sm-3 hidden-xs column-left">
       <div class="column-block">
@@ -646,9 +642,9 @@
         <div class="pagination-inner">
           <ul class="pagination">
             <li class="active"><span>1</span></li>
-            <li><a href="category.html">2</a></li>
-            <li><a href="category.html">&gt;</a></li>
-            <li><a href="category.html">&gt;|</a></li>
+            <li><a href="index.php?page=shop">2</a></li>
+            <li><a href="index.php?page=shop">&gt;</a></li>
+            <li><a href="index.php?page=shop">&gt;|</a></li>
           </ul>
         </div>
       </div>
