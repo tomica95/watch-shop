@@ -1,5 +1,7 @@
 ﻿<?php 
 
+    include "config/connection.php";
+
     include "views/fixed/head.php";
 
     include "views/fixed/header.php";
@@ -31,8 +33,6 @@
         case 'product':
         include "views/pages/product.php";
         break;
-
-
 
       }  
     }

@@ -36,25 +36,13 @@
         </div>
         <div class="navbar-collapse">
           <ul class="main-navigation">
-            <li><a href="index.php"   class="parent"  >Home</a> </li>
-            <li><a href="index.php?page=shop"   class="parent"  >Collection</a> </li>
-            <li><a href="index.php?page=shop"   class="parent"  >Women</a> </li>
-            <li><a href="index.php?page=shop"   class="parent"  >Men</a> </li>
-            <li><a href="index.php?page=shop"   class="parent"  >Accessories</a> </li>
-            <li><a href="#" class="active parent">Page</a>
-              <ul>
-                <li><a href="index.php?page=shop">Category Page</a></li>
-                <li><a href="cart.html">Cart Page</a></li>
-                <li><a href="checkout.html">Checkout Page</a></li>
-                <li><a href="blog.html" >Blog Page</a></li>
-                <li><a href="singale-blog.html" >Singale Blog Page</a></li>
-                <li><a href="index.php?page=register">Register Page</a></li>
-                <li><a href="contact.html">Contact Page</a></li>
-              </ul>
-            </li>
-            <li><a href="blog.html" class="parent"  >Blog</a></li>
-            <li><a href="index.php?page=about" >About us</a></li>
-            <li><a href="contact.html" >Contact Us</a> </li>
+            <?php 
+              include "models/menu/menu_functions.php";
+              $links = getMenu();
+              foreach($links as $link):
+            ?>
+            <li><a href="<?=$link->href?>"   class="parent"  ><?=$link->name?></a> </li>
+              <?php endforeach; ?>
           </ul>
         </div>
       </div>
