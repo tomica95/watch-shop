@@ -42,7 +42,7 @@
         <div class="row bestseller-grid product-grid">
           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
             <div class="product-thumb transition">
-              <div class="image product-imageblock"> <a href="#"> <img src="image/product/2product50x59.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
+              <div class="image product-imageblock"> <a href="#"> <img src="assets/image/product/2product50x59.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
                 <div class="button-group">
                   <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
                   <button type="button" class="addtocart-btn">Add to Cart</button>
@@ -62,7 +62,7 @@
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
             <div class="product-thumb transition">
-              <div class="image product-imageblock"> <a href="#"> <img src="image/product/3product50x59.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
+              <div class="image product-imageblock"> <a href="#"> <img src="assets/image/product/3product50x59.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
                 <div class="button-group">
                   <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
                   <button type="button" class="addtocart-btn">Add to Cart</button>
@@ -82,7 +82,7 @@
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
             <div class="product-thumb transition">
-              <div class="image product-imageblock"> <a href="#"> <img src="image/product/4product50x59.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
+              <div class="image product-imageblock"> <a href="#"> <img src="assets/image/product/4product50x59.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
                 <div class="button-group">
                   <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
                   <button type="button" class="addtocart-btn">Add to Cart</button>
@@ -107,7 +107,7 @@
             <div class="product-thumb transition">
               <div class="image product-imageblock">
               <a href="#">
-              <img src="image/product/1product50x59.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" />
+              <img src="assets/image/product/1product50x59.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" />
               </a>
               </div>
               <div class="caption product-detail">
@@ -121,7 +121,7 @@
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
             <div class="product-thumb transition">
-              <div class="image product-imageblock"><a href="#"><img src="image/product/2product50x59.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /></a>
+              <div class="image product-imageblock"><a href="#"><img src="assets/image/product/2product50x59.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /></a>
                 <div class="button-group">
                   <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
                   <button type="button" class="addtocart-btn" >Add to Cart</button>
@@ -139,7 +139,7 @@
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
             <div class="product-thumb transition">
-              <div class="image product-imageblock"><a href="#"><img src="image/product/3product50x59.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /></a>
+              <div class="image product-imageblock"><a href="#"><img src="assets/image/product/3product50x59.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /></a>
                 <div class="button-group">
                   <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
                   <button type="button" class="addtocart-btn" >Add to Cart</button>
@@ -157,7 +157,7 @@
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
             <div class="product-thumb transition">
-              <div class="image product-imageblock"><a href="#"><img src="image/product/2product50x59.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /></a>
+              <div class="image product-imageblock"><a href="#"><img src="assets/image/product/2product50x59.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /></a>
                 <div class="button-group">
                   <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
                   <button type="button" class="addtocart-btn" >Add to Cart</button>
@@ -180,28 +180,28 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="thumbnails">
-            <div><a class="thumbnail" href="image/product/product8.jpg" title="lorem ippsum dolor dummy"><img src="image/product/product1.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
+            <div><a class="thumbnail" href="image/product/product8.jpg" title="lorem ippsum dolor dummy"><img src="assets/image/product/product1.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
             <div id="product-thumbnail" class="owl-carousel">
               <div class="item">
-                <div class="image-additional"><a class="thumbnail  " href="image/product/product1.jpg" title="lorem ippsum dolor dummy"> <img src="image/product/pro-1-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
+                <div class="image-additional"><a class="thumbnail  " href="assets/image/product/product1.jpg" title="lorem ippsum dolor dummy"> <img src="assets/image/product/pro-1-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
               </div>
               <div class="item">
-                <div class="image-additional"><a class="thumbnail  " href="image/product/product2.jpg" title="lorem ippsum dolor dummy"> <img src="image/product/pro-2-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
+                <div class="image-additional"><a class="thumbnail  " href="assets/image/product/product2.jpg" title="lorem ippsum dolor dummy"> <img src="assets/image/product/pro-2-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
               </div>
               <div class="item">
-                <div class="image-additional"><a class="thumbnail  " href="image/product/product3.jpg" title="lorem ippsum dolor dummy"> <img src="image/product/pro-3-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
+                <div class="image-additional"><a class="thumbnail  " href="assets/image/product/product3.jpg" title="lorem ippsum dolor dummy"> <img src="assets/image/product/pro-3-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
               </div>
               <div class="item">
-                <div class="image-additional"><a class="thumbnail  " href="image/product/product4.jpg" title="lorem ippsum dolor dummy"> <img src="image/product/pro-4-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
+                <div class="image-additional"><a class="thumbnail  " href="assets/image/product/product4.jpg" title="lorem ippsum dolor dummy"> <img src="assets/image/product/pro-4-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
               </div>
               <div class="item">
-                <div class="image-additional"><a class="thumbnail  " href="image/product/product5.jpg" title="lorem ippsum dolor dummy"> <img src="image/product/pro-5-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
+                <div class="image-additional"><a class="thumbnail  " href="assets/image/product/product5.jpg" title="lorem ippsum dolor dummy"> <img src="assets/image/product/pro-5-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
               </div>
               <div class="item">
-                <div class="image-additional"><a class="thumbnail  " href="image/product/product6.jpg" title="lorem ippsum dolor dummy"> <img src="image/product/pro-6-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
+                <div class="image-additional"><a class="thumbnail  " href="assets/image/product/product6.jpg" title="lorem ippsum dolor dummy"> <img src="assets/image/product/pro-6-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
               </div>
               <div class="item">
-                <div class="image-additional"><a class="thumbnail  " href="image/product/product7.jpg" title="lorem ippsum dolor dummy"> <img src="image/product/pro-7-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
+                <div class="image-additional"><a class="thumbnail  " href="assets/image/product/product7.jpg" title="lorem ippsum dolor dummy"> <img src="assets/image/product/pro-7-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
               </div>
             </div>
           </div>
@@ -317,7 +317,7 @@
         <div id="related-slidertab" class="row owl-carousel product-slider">
           <div class="item">
             <div class="product-thumb transition">
-              <div class="image product-imageblock"> <a href="#"> <img src="image/product/pro-1-220x294.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
+              <div class="image product-imageblock"> <a href="#"> <img src="assets/image/product/pro-1-220x294.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
                 <div class="button-group">
                   <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
                   <button type="button" class="addtocart-btn">Add to Cart</button>
@@ -337,7 +337,7 @@
           </div>
           <div class="item">
             <div class="product-thumb transition">
-              <div class="image product-imageblock"> <a href="#"> <img src="image/product/pro-2-220x294.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
+              <div class="image product-imageblock"> <a href="#"> <img src="assets/image/product/pro-2-220x294.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
                 <div class="button-group">
                   <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
                   <button type="button" class="addtocart-btn">Add to Cart</button>
@@ -357,7 +357,7 @@
           </div>
           <div class="item">
             <div class="product-thumb transition">
-              <div class="image product-imageblock"> <a href="#"> <img src="image/product/pro-3-220x294.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
+              <div class="image product-imageblock"> <a href="#"> <img src="assets/image/product/pro-3-220x294.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
                 <div class="button-group">
                   <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
                   <button type="button" class="addtocart-btn">Add to Cart</button>
@@ -377,7 +377,7 @@
           </div>
           <div class="item">
             <div class="product-thumb transition">
-              <div class="image product-imageblock"> <a href="#"> <img src="image/product/pro-4-220x294.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
+              <div class="image product-imageblock"> <a href="#"> <img src="assets/image/product/pro-4-220x294.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
                 <div class="button-group">
                   <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
                   <button type="button" class="addtocart-btn">Add to Cart</button>
@@ -397,7 +397,7 @@
           </div>
           <div class="item">
             <div class="product-thumb transition">
-              <div class="image product-imageblock"> <a href="#"> <img src="image/product/pro-5-220x294.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
+              <div class="image product-imageblock"> <a href="#"> <img src="assets/image/product/pro-5-220x294.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
                 <div class="button-group">
                   <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
                   <button type="button" class="addtocart-btn">Add to Cart</button>
@@ -417,7 +417,7 @@
           </div>
           <div class="item">
             <div class="product-thumb transition">
-              <div class="image product-imageblock"> <a href="#"> <img src="image/product/pro-6-220x294.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
+              <div class="image product-imageblock"> <a href="#"> <img src="assets/image/product/pro-6-220x294.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
                 <div class="button-group">
                   <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
                   <button type="button" class="addtocart-btn">Add to Cart</button>
@@ -437,7 +437,7 @@
           </div>
           <div class="item">
             <div class="product-thumb transition">
-              <div class="image product-imageblock"> <a href="#"> <img src="image/product/pro-7-220x294.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
+              <div class="image product-imageblock"> <a href="#"> <img src="assets/image/product/pro-7-220x294.jpg" alt="women's New Wine is an alcoholic" title="women's New Wine is an alcoholic" class="img-responsive" /> </a>
                 <div class="button-group">
                   <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
                   <button type="button" class="addtocart-btn">Add to Cart</button>

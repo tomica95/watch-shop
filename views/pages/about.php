@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="wwd">
-      <div class="col-sm-6"><img class="img-responsive" src="image/blog/blog_4.jpg" alt="#"></div>
+      <div class="col-sm-6"><img class="img-responsive" src="assets/image/blog/blog_4.jpg" alt="#"></div>
       <div class="col-sm-6">
         <div class="column-inner ">
           <div class="wrapper">
@@ -79,7 +79,7 @@
   <div class="row team">
     <div class="col-md-3 col-sm-3 team1 ">
       <div class="photo">
-        <div class="imageblock"> <img alt="#" src="image/team1.jpg" class="img-responsive"> </div>
+        <div class="imageblock"> <img alt="#" src="assets/image/team1.jpg" class="img-responsive"> </div>
         <div class="name"> <a href="#">IBRAHIM ISTALIK</a> </div>
         <h3>Founder and CEO</h3>
         <p>Page editors now use Lorem Ipsum as their default modelum sites</p>
@@ -87,7 +87,7 @@
     </div>
     <div class="col-md-3 col-sm-3 team1 ">
       <div class="photo">
-        <div class="imageblock"> <img alt="#" src="image/team2.jpg" class="img-responsive"> </div>
+        <div class="imageblock"> <img alt="#" src="assets/image/team2.jpg" class="img-responsive"> </div>
         <div class="name"> <a href="#">IBRAHIM ISTALIK</a> </div>
         <h3>Founder and CEO</h3>
         <p>Page editors now use Lorem Ipsum as their default modelum sites</p>
@@ -95,7 +95,7 @@
     </div>
     <div class="col-md-3 col-sm-3 team1 ">
       <div class="photo">
-        <div class="imageblock"> <img alt="#" src="image/team3.jpg" class="img-responsive"> </div>
+        <div class="imageblock"> <img alt="#" src="assets/image/team3.jpg" class="img-responsive"> </div>
         <div class="name"> <a href="#">IBRAHIM ISTALIK</a> </div>
         <h3>Founder and CEO</h3>
         <p>Page editors now use Lorem Ipsum as their default modelum sites</p>
@@ -103,7 +103,7 @@
     </div>
     <div class="col-md-3 col-sm-3 team1 ">
       <div class="photo">
-        <div class="imageblock"> <img alt="#" src="image/team4.jpg" class="img-responsive"> </div>
+        <div class="imageblock"> <img alt="#" src="assets/image/team4.jpg" class="img-responsive"> </div>
         <div class="name"> <a href="#">IBRAHIM ISTALIK</a> </div>
         <h3>Founder and CEO</h3>
         <p>Page editors now use Lorem Ipsum as their default modelum sites</p>
