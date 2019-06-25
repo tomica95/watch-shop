@@ -14,10 +14,10 @@ function registerUser($email,$password)
         }
     }
 
-function ifExist()
+function ifExist($email)
 {
     global $conn;
-    
+
     $checking_if_exist = $conn->prepare("SELECT * FROM users WHERE email=?");
     $checking_if_exist->execute([
         $email

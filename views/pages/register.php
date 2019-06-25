@@ -1,3 +1,9 @@
+<?php
+              if(isset($_GET['Message'])){
+                echo '<h2>'.$_GET['Message'].'</h2>';
+              }
+            
+            ?>
 <div class="container">
     <div class="row">
         

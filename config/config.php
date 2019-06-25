@@ -1,6 +1,6 @@
 <?php
 
-define("BASE_URL", $_SERVER['DOCUMENT_ROOT'].'/php-shop/');
+define("BASE_URL", $_SERVER['DOCUMENT_ROOT'].'/watch-shop/');
 
 define("SERVER", env("SERVER"));
 define("DATABASE", env("DATABASE"));

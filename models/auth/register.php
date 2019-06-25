@@ -25,15 +25,16 @@ require_once "auth_functions.php";
             $greske[]= "Passwords not the same";    
         }
         if(count($greske)>0){
-            Header("Location:../../index.php?page=login");
+            Header("Location:../../index.php?page=register");
         }
         else
         {
-           $exist = ifExist();
+           $exist = ifExist($email);
+
             if($exist)
             {
-                $Message = urlencode("Your email is already in database");
-                header("Location:../../index.php?page=login&Message=".$Message);
+                $Message = urlencode("Your email is already registered");
+                header("Location:../../index.php?page=register&Message=".$Message);
                 die;
             }
             else
