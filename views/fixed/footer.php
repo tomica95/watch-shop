@@ -102,5 +102,7 @@
 <script>
 $('.parallax').parally({offset: -40});
 </script>
+<!-- my scripts -->
+<script src="assets/js/reg-validation.js"></script>
 </body>
 </html>
