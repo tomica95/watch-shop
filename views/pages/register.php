@@ -4,7 +4,7 @@
         <div class="col-sm-9" id="content">
             <h1>Register Account</h1>
             <p>If you already have an account with us, please login at the <a href="index.php?page=login">login page</a>.</p>
-            <form class="form-horizontal" enctype="multipart/form-data" method="post" action="index.php?page=register">
+            <form class="form-horizontal" method="post" action="models/auth/register.php">
                 <fieldset id="account">
                     <legend>Personal Detail</legend>
                     <div class="form-group required">
@@ -26,7 +26,7 @@
                     <div class="form-group required">
                         <label for="input-confirm" class="col-sm-2 control-label">Password Confirm</label>
                         <div class="col-sm-10">
-                            <input type="password" class="form-control" id="input-confirm" placeholder="Password Confirm" value="" name="confirm">
+                            <input type="password" class="form-control" id="input-confirm" placeholder="Password Confirm" value="" name="confirm-password">
                         </div>
                     </div>
                 </fieldset>
