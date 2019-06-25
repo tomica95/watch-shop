@@ -48,6 +48,17 @@ function userLogged($id_user)
             'log'=>'1',
             'id'=>$id_user
             ]);
+
+}
+function userLoggedOut($id)
+{
+        global $conn;
+        $query = $conn->prepare("UPDATE users SET logged=:log WHERE id=:id");
+        $query->execute([
+            'log'=>'0',
+            'id'=>$id
+        ]);
+
 }
 
 

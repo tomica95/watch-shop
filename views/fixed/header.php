@@ -11,8 +11,13 @@
               <ul class="list-inline">
                 <li class="dropdown account"><a href="#" title="My Account" class="  dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user"></i><span>My Account</span> <span class="caret"></span></a>
                   <ul class="dropdown-menu dropdown-menu-right">
+                    <?php if(!isset($_SESSION['user'])):?>
                     <li><a href="index.php?page=register">Register</a></li>
                     <li><a href="index.php?page=login">Login</a></li>
+                    <?php endif; ?>
+                    <?php if(isset($_SESSION['user'])): ?>
+                    <li><a href="models/auth/logout.php">Logout</a></li>
+                    <?php endif; ?>
                   </ul>
                 </li>
                
