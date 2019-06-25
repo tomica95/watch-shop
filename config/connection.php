@@ -9,7 +9,7 @@ try {
     $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
-catch(PDOPDOException $ex){
+catch(PDOException $ex){
     echo $ex->getMessage();
 }
 
@@ -22,4 +22,12 @@ function executeQueryOneRow($query){
     global $conn;
     return $conn->query($query)->fetch();
 }
+
+function writeError($error){
+    $file = fopen(BASE_URL . "data/errors.txt", "a");
+    $string = date("d.m.Y H:i:s") ."\t" . $error . "\n";
+    fwrite($file, $string);
+    fclose($file);
+}
+
 

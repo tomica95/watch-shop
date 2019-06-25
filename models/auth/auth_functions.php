@@ -10,14 +10,14 @@ function registerUser($email,$password)
         }
         catch(PDOException $e){
          
-            handle($e->getMessage());
+            writeError($e->getMessage());
         }
     }
 
 function ifExist($email)
 {
     global $conn;
-
+    try{
     $checking_if_exist = $conn->prepare("SELECT * FROM users WHERE email=?");
     $checking_if_exist->execute([
         $email
@@ -26,6 +26,12 @@ function ifExist($email)
     $exist = $checking_if_exist->fetch();
 
     return $exist;
+    }
+    catch(PDOException $e){
+         
+        writeError($e->getMessage());
+    }
+
 }
 
 function findUser($email,$password){
@@ -37,28 +43,39 @@ function findUser($email,$password){
     }
     catch(PDOException $e){
      
-        handle($e->getMessage());
+        writeError($e->getMessage());
     }
 }
 function userLogged($id_user)
 {
     global $conn;
+    try{
     $query = $conn->prepare("UPDATE users SET logged=:log WHERE id=:id");
     $query->execute([
             'log'=>'1',
             'id'=>$id_user
             ]);
+    }
+    catch(PDOException $e){
+         
+        writeError($e->getMessage());
+    }
 
 }
 function userLoggedOut($id)
 {
         global $conn;
+        try{
         $query = $conn->prepare("UPDATE users SET logged=:log WHERE id=:id");
         $query->execute([
             'log'=>'0',
             'id'=>$id
         ]);
-
+        }
+        catch(PDOException $e){
+         
+            writeError($e->getMessage());
+        }
 }
 
 
