@@ -1,5 +1,6 @@
 ﻿<?php 
-
+    session_start();
+    
     include "config/connection.php";
 
     include "views/fixed/head.php";

@@ -28,4 +28,27 @@ function ifExist($email)
     return $exist;
 }
 
+function findUser($email,$password){
+    global $conn;
+    try{
+        $result = $conn->prepare("SELECT * FROM users WHERE email = ? AND password = ?");
+        $result->execute([$email,md5($password)]);
+        return $result->fetch();
+    }
+    catch(PDOException $e){
+     
+        handle($e->getMessage());
+    }
+}
+function userLogged($id_user)
+{
+    global $conn;
+    $query = $conn->prepare("UPDATE users SET logged=:log WHERE id=:id");
+    $query->execute([
+            'log'=>'1',
+            'id'=>$id_user
+            ]);
+}
+
+
 ?>

@@ -13,7 +13,7 @@
           <div class="well">
             <h2>Returning Customer</h2>
             <p><strong>I am a returning customer</strong></p>
-            <form enctype="multipart/form-data" method="post" action="index.php?page=login">
+            <form enctype="multipart/form-data" method="post" action="models/auth/login.php">
               <div class="form-group">
                 <label for="input-email" class="control-label">E-Mail Address</label>
                 <input type="text" class="form-control" id="input-email" placeholder="E-Mail Address" value="" name="email">
