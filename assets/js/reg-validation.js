@@ -15,7 +15,7 @@ document.getElementById('reg').addEventListener('click',function(e){
     
     var greske = [];
     
-    //checking mail
+   
     if(!regMail.test(mail.value)){
     
         mail.style.borderColor = "red";
@@ -23,7 +23,7 @@ document.getElementById('reg').addEventListener('click',function(e){
         greske.push('not good mail');
     }
     
-    //checking password 
+   
     if(!regPassword.test(password.value)){
     
         password.style.borderColor = "red";
@@ -35,7 +35,7 @@ document.getElementById('reg').addEventListener('click',function(e){
         greske.push('Bad password');
     }
     
-    //checking password retype
+    
     if(password.value!=password2.value || password2.value=="")
     {
         password.style.borderColor = "red";
