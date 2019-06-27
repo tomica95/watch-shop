@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-    $('.brands').on('click',function(){
+    $('.brands').on('click',filter);
 
-       
+       function filter(){
 
         let cat_id = $(this).data('id');
 
@@ -22,11 +22,13 @@ $(document).ready(function(){
             },
             error:function(error){
 
-                console.log(error);
+                $('#products').html(error);
             }
         })
 
-    });
+    
+
+    }
 
     function printProducts(products)
     {
@@ -56,8 +58,8 @@ $(document).ready(function(){
 
 
         `;
+    
     }
-
     
 
 })
