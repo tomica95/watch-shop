@@ -72,12 +72,12 @@ $(document).ready(function(){
             <div class="product-thumb">
           <div class="image product-imageblock"> 
             <a href="index.php?page=product&id=${product.productID}">
-            <img src="assets/img/${product.small}" alt="${product.name}" title="lorem ippsum dolor dummy" class="img-responsive">
+            <img src="assets/img/${product.small}" alt="${product.name}" title="${product.name}" class="img-responsive">
             </a>
           </div>
         
           <div class="caption product-detail">
-            <h4 class="product-name"> <a href="index.php?page=product&id=${product.productID}" title="lorem ippsum dolor dummy">${product.name}</a> </h4>
+            <h4 class="product-name"> <a href="index.php?page=product&id=${product.productID}" title="${product.name}">${product.name}</a> </h4>
             <p class="price product-price"> $ ${product.price} </p>
           </div>
           </div>

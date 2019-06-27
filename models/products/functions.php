@@ -49,5 +49,26 @@
             writeError($e->getMessage());
         }
     }
+    function getProductWithPictureById($id)
+    {
+        try{
+            global $conn;
+
+            $product = $conn->prepare("SELECT *,p.name as productName,c.name as categoryName,p.id as productID FROM products p INNER JOIN pictures s ON p.id=s.product_id INNER JOIN categories c ON p.cat_id=c.id WHERE p.id=?");
+            
+            $product->execute([
+                $id
+            ]);
+            $result = $product->fetch();
+
+            return $result;
+
+            }
+            catch(PDOPDOException $e){
+    
+                writeError($e->getMessage());
+               
+            }
+    }
 
 ?>
