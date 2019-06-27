@@ -35,15 +35,11 @@
           <label class="control-label" for="input-sort">Sort By :</label>
           <div class="sort-inner">
             <select id="input-sort" class="form-control">
-              <option value="ASC" selected="selected">Default</option>
-              <option value="ASC">Name (A - Z)</option>
-              <option value="DESC">Name (Z - A)</option>
-              <option value="ASC">Price (Low &gt; High)</option>
-              <option value="DESC">Price (High &gt; Low)</option>
-              <option value="DESC">Rating (Highest)</option>
-              <option value="ASC">Rating (Lowest)</option>
-              <option value="ASC">Model (A - Z)</option>
-              <option value="DESC">Model (Z - A)</option>
+              <option value="default" selected="selected">Default</option>
+              <option value="name-asc">Name (A - Z)</option>
+              <option value="name-desc">Name (Z - A)</option>
+              <option value="price-asc">Price (Low &gt; High)</option>
+              <option value="price-desc">Price (High &gt; Low)</option>
             </select>
           </div>
         </div>

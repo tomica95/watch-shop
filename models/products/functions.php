@@ -2,7 +2,16 @@
 
     function getAllProductsWithPicture()
     {
+        try{
+
         return executeQuery('SELECT *,p.id as productID FROM products p INNER JOIN pictures s ON p.id=s.product_id');
+        }
+        catch(PDOPDOException $e){
+
+            writeError($e->getMessage());
+           
+        }
+        
     }
 
     function filterByCategory($id)
@@ -24,11 +33,20 @@
         }
         catch(PDOPDOException $e){
 
-         
-                handle($e->getMessage());
+            writeError($e->getMessage());
            
+        }
+    }
+    function sortProducts(){
 
+        try{
 
+            return "SELECT *,p.id as productID FROM products p INNER JOIN pictures s ON p.id=s.product_id ";
+
+        }
+        catch(PDOException $e){
+         
+            writeError($e->getMessage());
         }
     }
 

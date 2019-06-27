@@ -2,11 +2,11 @@ $(document).ready(function(){
 
     $('.brands').on('click',filter);
 
-       function filter(){
+    $('#input-sort').on('change',sort);
+
+    function filter(){
 
         let cat_id = $(this).data('id');
-
-        console.log()
 
         $.ajax({
             url:"models/products/filterByCategory.php",
@@ -29,6 +29,30 @@ $(document).ready(function(){
     
 
     }
+
+    function sort()
+    {
+        let parametar = $(this).val();
+
+        $.ajax({
+            url:"models/products/sort.php",
+            method:"POST",
+            data:{
+                parametar
+            },
+            dataType:'json',
+            success:function(products){
+
+                printProducts(products);
+            },
+            error:function(error){
+
+                $('#products').html(error);
+            }
+        })
+    }
+
+
 
     function printProducts(products)
     {
