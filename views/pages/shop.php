@@ -49,7 +49,7 @@
         </div>
       </div>
       <br />
-      <div class="grid-list-wrapper">
+      <div class="grid-list-wrapper" id="products">
         <?php 
 
           include "models/products/functions.php";

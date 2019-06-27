@@ -47,3 +47,5 @@
         </div>
     </div>
 </div>
+
+<script src="assets/js/reg-validation.js"></script>
