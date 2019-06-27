@@ -25,10 +25,7 @@
       <h2 class="category-title">Products</h2>
       <div class="category-page-wrapper">
         <div class="col-md-6 list-grid-wrapper">
-          <div class="btn-group btn-list-grid">
-            <button type="button" id="list-view" class="btn btn-default list" data-toggle="tooltip" title="List"><i class="fa fa-th-list"></i></button>
-            <button type="button" id="grid-view" class="btn btn-default grid" data-toggle="tooltip" title="Grid"><i class="fa fa-th"></i></button>
-          </div>
+          
            </div>
        
         <div class="col-md-2 text-right sort-wrapper">
@@ -45,7 +42,8 @@
         </div>
       </div>
       <br />
-      <div class="grid-list-wrapper" id="products">
+      <div class="grid-list-wrapper">
+        <div class="container" id="products">
         <?php 
 
           include "models/products/functions.php";
@@ -55,7 +53,7 @@
           foreach($products as $product):
         
         ?>
-        <div class="product-layout product-list col-xs-12">
+        <div class="product-layout product-grid col-xs-12 col-lg-3">
           <div class="product-thumb">
             <div class="image product-imageblock"> <a href="index.php?page=product&id=<?=$product->productID?>"> <img src="assets/img/<?=$product->small?>" alt="<?=$product->name?>" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
             </div>
@@ -67,6 +65,15 @@
           </div>
         </div>
           <?php endforeach; ?>
+          </div>
+
+
+          
+
+
+
+
+
       </div>
       <div class="category-page-wrapper">
         
