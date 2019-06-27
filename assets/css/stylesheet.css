@@ -9,6 +9,11 @@ body {
     letter-spacing:0.5px;
 }
 
+.product-layout img {
+	max-width: 250px;
+	max-height: 250px;
+}
+
 :focus {
     outline: none !important;
 }
