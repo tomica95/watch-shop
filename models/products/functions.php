@@ -31,7 +31,7 @@
             return $result;
 
         }
-        catch(PDOPDOException $e){
+        catch(PDOException $e){
 
             writeError($e->getMessage());
            
@@ -64,11 +64,27 @@
             return $result;
 
             }
-            catch(PDOPDOException $e){
+            catch(PDOException $e){
     
                 writeError($e->getMessage());
                
             }
+
     }
+
+    function latestProducts(){
+
+        try {
+
+            return executeQuery("SELECT *,p.id as productID FROM products p INNER JOIN pictures s ON p.id=s.product_id ORDER BY date DESC LIMIT 3 ");
+
+        }
+        catch(PDOException $e){
+         
+            writeError($e->getMessage());
+        }
+    }
+
+
 
 ?>
