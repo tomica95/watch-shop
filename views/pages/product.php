@@ -46,6 +46,10 @@
           </ul>
           <hr>
           <p class="product-desc"><?=$product->description?></p>
+          <form method="POST" action="models/products/export-excel.php">
+                <input type="submit" value="Export to excel" class="btn btn-default" name="export-excel">
+                <input type="hidden" value="<?=$product->productID?>" name="id" >
+          </form>
         </div>
       </div>
     </div>
