@@ -43,12 +43,13 @@
                 foreach($latest as $product):
 
             ?>
+            <!-- tab latest one item -->
               <div class="item">
                 <div class="product-thumb transition">
                   <div class="image product-imageblock"> <a href="index.php?page=product&id=<?=$product->productID?>"><img src="assets/img/<?=$product->small?>" alt="<?=$product->name?>" title="<?=$product->name?>" class="img-responsive" /> </a>
                   </div>
                   <div class="caption product-detail">
-                    <h4 class="product-name"><a href="#" title="<?=$product->name?>"><?=$product->name?></a></h4>
+                    <h4 class="product-name"><a href="" title="<?=$product->name?>"><?=$product->name?></a></h4>
                     <p class="price product-price">$<?=$product->price?></p>
                   </div>
                 </div>
@@ -61,129 +62,27 @@
         
       
       </div>
-      <h3 class="productblock-title">Featured Products</h3>
+      <h3 class="productblock-title">Best of our collection</h3>
       <div class="box">
         <div id="feature-slider" class="row owl-carousel product-slider">
+          <?php 
+
+              $best = bestProducts();
+
+              foreach($best as $pr):
+          
+          ?>
           <div class="item product-slider-item">
             <div class="product-thumb transition">
-              <div class="image product-imageblock"> <a href="product.html"> <img src="assets/image/product/product4.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
-                <div class="button-group">
-                  <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
-                  <button type="button" class="addtocart-btn" >Add To Cart</button>
-                  <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
-                </div>
+              <div class="image product-imageblock"> <a href="index.php?page=product&id=<?=$pr->productID?>"> <img src="assets/img/<?=$pr->small?>" alt="<?=$pr->name?>" title="<?=$pr->name?>" class="img-responsive" /> </a>
               </div>
               <div class="caption product-detail">
-                <h4 class="product-name"><a href="product.html" title="lorem ippsum dolor dummy">lorem ippsum dolor dummy</a></h4>
-                <p class="price product-price"> <span class="price-new">$254.00</span> <span class="price-old">$272.00</span> <span class="price-tax">Ex Tax: $210.00</span> </p>
-              </div>
-              <div class="button-group">
-                <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
-                <button type="button" class="addtocart-btn" >Add To Cart</button>
-                <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+                <h4 class="product-name"><a href="index.php?page=product&id=<?=$pr->productID?>" title="<?=$pr->name?>"><?=$pr->name?></a></h4>
+                <p class="price product-price"> <span class="price-new">$ <?=$pr->price ?></span> </p>
               </div>
             </div>
           </div>
-          <div class="item product-slider-item">
-            <div class="product-thumb transition">
-              <div class="image product-imageblock"> <a href="product.html"> <img src="assets/image/product/product5.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
-                <div class="button-group">
-                  <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
-                  <button type="button" class="addtocart-btn" >Add To Cart</button>
-                  <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
-                </div>
-              </div>
-              <div class="caption product-detail">
-                <h4 class="product-name"><a href="product.html" title="lorem ippsum dolor dummy">lorem ippsum dolor dummy</a></h4>
-                <p class="price product-price"> <span class="price-new">$254.00</span> <span class="price-old">$272.00</span> <span class="price-tax">Ex Tax: $210.00</span> </p>
-              </div>
-              <div class="button-group">
-                <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
-                <button type="button" class="addtocart-btn" >Add To Cart</button>
-                <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="item product-slider-item">
-            <div class="product-thumb transition">
-              <div class="image product-imageblock"> <a href="product.html"> <img src="assets/image/product/product6.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
-                <div class="button-group">
-                  <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
-                  <button type="button" class="addtocart-btn" >Add To Cart</button>
-                  <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
-                </div>
-              </div>
-              <div class="caption product-detail">
-                <h4 class="product-name"><a href="product.html" title="lorem ippsum dolor dummy">lorem ippsum dolor dummy</a></h4>
-                <p class="price product-price"> <span class="price-new">$254.00</span> <span class="price-old">$272.00</span> <span class="price-tax">Ex Tax: $210.00</span> </p>
-              </div>
-              <div class="button-group">
-                <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
-                <button type="button" class="addtocart-btn" >Add To Cart</button>
-                <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="item product-slider-item">
-            <div class="product-thumb transition">
-              <div class="image product-imageblock"> <a href="#"> <img src="assets/image/product/product7.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
-                <div class="button-group">
-                  <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
-                  <button type="button" class="addtocart-btn" >Add To Cart</button>
-                  <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
-                </div>
-              </div>
-              <div class="caption product-detail">
-                <h4 class="product-name"><a href="product.html" title="lorem ippsum dolor dummy">lorem ippsum dolor dummy</a></h4>
-                <p class="price product-price"> <span class="price-new">$254.00</span> <span class="price-old">$272.00</span> <span class="price-tax">Ex Tax: $210.00</span> </p>
-              </div>
-              <div class="button-group">
-                <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
-                <button type="button" class="addtocart-btn" >Add To Cart</button>
-                <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="item product-slider-item">
-            <div class="product-thumb transition">
-              <div class="image product-imageblock"> <a href="#"> <img src="assets/image/product/product8.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
-                <div class="button-group">
-                  <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
-                  <button type="button" class="addtocart-btn" >Add To Cart</button>
-                  <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
-                </div>
-              </div>
-              <div class="caption product-detail">
-                <h4 class="product-name"><a href="product.html" title="lorem ippsum dolor dummy">lorem ippsum dolor dummy</a></h4>
-                <p class="price product-price"> <span class="price-new">$254.00</span> <span class="price-old">$272.00</span> <span class="price-tax">Ex Tax: $210.00</span> </p>
-              </div>
-              <div class="button-group">
-                <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
-                <button type="button" class="addtocart-btn" >Add To Cart</button>
-                <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="item product-slider-item">
-            <div class="product-thumb transition">
-              <div class="image product-imageblock"> <a href="#"> <img src="assets/image/product/product1.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
-                <div class="button-group">
-                  <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
-                  <button type="button" class="addtocart-btn" >Add To Cart</button>
-                  <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
-                </div>
-              </div>
-              <div class="caption product-detail">
-                <h4 class="product-name"><a href="product.html" title="lorem ippsum dolor dummy">lorem ippsum dolor dummy</a></h4>
-                <p class="price product-price"> <span class="price-new">$254.00</span> <span class="price-old">$272.00</span> <span class="price-tax">Ex Tax: $210.00</span> </p>
-              </div>
-              <div class="button-group">
-                <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
-                <button type="button" class="addtocart-btn" >Add To Cart</button>
-                <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
-              </div>
-            </div>
-          </div>
+              <?php endforeach; ?>
         </div>
       </div>
    
