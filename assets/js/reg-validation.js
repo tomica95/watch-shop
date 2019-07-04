@@ -30,7 +30,7 @@ document.getElementById('reg').addEventListener('click',function(e){
 
         password2.style.borderColor="red";
         
-        document.getElementById('password-mistake').innerHTML = "Your password is not in good format";
+        document.getElementById('password-mistake').innerHTML = "Your password is not in good format, must have more than 5 characters, one big letter and one number ";
 
         greske.push('Bad password');
     }
