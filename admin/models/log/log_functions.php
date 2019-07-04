@@ -17,7 +17,7 @@ function countLoggedInUsers()
     }
     catch(PDOException $e){
      
-        handle($e->getMessage());
+        writeError($e->getMessage());
     }
 
 }

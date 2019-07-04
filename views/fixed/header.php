@@ -17,6 +17,9 @@
                     <?php endif; ?>
                     <?php if(isset($_SESSION['user'])): ?>
                     <li><a href="models/auth/logout.php">Logout</a></li>
+                    <?php if($_SESSION['user']->role_id=="1"):?>
+                      <li><a href="admin/index.php">Admin panel</a></li>
+                    <?php endif; ?>
                     <?php endif; ?>
                   </ul>
                 </li>

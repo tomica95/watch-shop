@@ -10,31 +10,36 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Role</th>
                                 </tr>
                             </thead>
                             <tbody>
+                            <?php
+                                require_once "models/users/user_functions.php";
+                                $users = allUsers();
+                                foreach($users as $user):
+                            ?>
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
+                                    <th scope="row"><?=$user->id?></th>
+                                    <td><?=$user->email?>k</td>
+                                    <td><?=$user->name?></td>
+                                    <td>
+                                    <button type="submit" class="btn btn-primary btn-sm">
+                                     <i class="fa fa-dot-circle-o"></i> Update
+                                    </button>
+                                    </td>
+                                    <td>
+                                    <form method="POST" action="models/users/delete.php">
+                                    <button type="submit" class="btn btn-danger btn-sm">
+                                    <i class="fa fa-ban"></i> Delete
+                                    </button>
+                                    <input type="hidden" name="id" value="<?=$user->id?>">
+                                    </form>
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
+                                <?php endforeach; ?>
                             </tbody>
                         </table>
                     </div>
