@@ -26,5 +26,48 @@ function deleteUser($id)
             }
 
 }
+function allRoles()
+{
+    try
+    {
+        return executeQuery("SELECT * FROM roles");
+    }
+    catch(Exception $e){
+     
+        writeError($e->getMessage());
+    }
+}
+function ifExist($email)
+{
+    global $conn;
+    try{
+    $checking_if_exist = $conn->prepare("SELECT * FROM users WHERE email=?");
+    $checking_if_exist->execute([
+        $email
+    ]);
+    
+    $exist = $checking_if_exist->fetch();
+
+    return $exist;
+    }
+    catch(PDOException $e){
+         
+        writeError($e->getMessage());
+    }
+
+}
+function registerUser($email,$password,$role_id)
+    {
+        global $conn;
+        try{
+            $register = $conn->prepare("INSERT INTO users VALUES('',?,?,?,?)");
+            $inserted = $register->execute([$email,md5($password),"0",$role_id]);
+            return $inserted;
+        }
+        catch(PDOException $e){
+         
+            writeError($e->getMessage());
+        }
+    }
 
 ?>

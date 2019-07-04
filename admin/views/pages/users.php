@@ -4,7 +4,7 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header">
-                        <strong class="card-title">Basic Table</strong>
+                        <strong class="card-title">Users</strong>
                     </div>
                     <div class="card-body">
                         <table class="table">
@@ -23,7 +23,7 @@
                             ?>
                                 <tr>
                                     <th scope="row"><?=$user->id?></th>
-                                    <td><?=$user->email?>k</td>
+                                    <td><?=$user->email?></td>
                                     <td><?=$user->name?></td>
                                     <td>
                                     <button type="submit" class="btn btn-primary btn-sm">
