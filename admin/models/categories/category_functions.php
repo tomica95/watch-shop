@@ -19,5 +19,25 @@ function deleteCategory($id)
         }
 }
 
+function insertCategory($name)
+{
+        try
+        {
+            global $conn;
+            
+            $query = $conn->prepare("INSERT INTO categories VALUES ('',?)");
+
+            $query->execute([
+                $name
+            ]);
+    
+        }
+        catch(Exception $e){
+ 
+            writeError($e->getMessage());
+        }
+    
+}
+
 
 ?>

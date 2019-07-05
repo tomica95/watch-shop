@@ -2,6 +2,9 @@
 
         session_start();
 
+        if(isset($_SESSION['user'])&&$_SESSION['user']->role_id=="1")
+        {
+        
         include "../config/connection.php";
 
         include "views/fixed/head.php";
@@ -24,6 +27,11 @@
 
         case 'categories':
         include "views/pages/categories.php";
+        break;
+
+        case "insert-category":
+        include "views/pages/insert-category.php";
+        break;
 
         }  
     
@@ -34,6 +42,16 @@
         }
     
 
-        include "views/fixed/footer.php"
+        include "views/fixed/footer.php";
+
+        }
+        else
+        {
+                echo "You don't have permission to be here!";
+        }
+
+        
+
+        
 ?>
 

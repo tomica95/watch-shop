@@ -5,6 +5,7 @@
                 <ul class="nav navbar-nav">
                     <li class="active">
                         <a href="../index.php"> <i class="menu-icon fa fa-dashboard"></i>Index</a>
+                        <a href="index.php"> <i class="menu-icon fa fa-dashboard"></i>Admin panel</a>
                     </li>
 
                     <!-- OVDE SE IZLISTAVAJU TABELE -->
