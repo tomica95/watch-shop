@@ -26,7 +26,7 @@
                                     <td><?=$user->email?></td>
                                     <td><?=$user->name?></td>
                                     <td>
-                                    <button type="submit" class="btn btn-primary btn-sm">
+                                    <button type="submit" class="btn btn-primary btn-sm update-user" data-id="<?=$user->id?>">
                                      <i class="fa fa-dot-circle-o"></i> Update
                                     </button>
                                     </td>
@@ -42,8 +42,11 @@
                                 <?php endforeach; ?>
                             </tbody>
                         </table>
+                       
                     </div>
+                    
                 </div>
+                <div id="user-update"></div>
             </div>
 
             </div>

@@ -29,6 +29,8 @@
             });
         })(jQuery);
     </script>
+    <script src="assets/myScripts/jquery.min.js"></script>
+    <script src="assets/myScripts/update-user.js"></script>
 
 </body>
 

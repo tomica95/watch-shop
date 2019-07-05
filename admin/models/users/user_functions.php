@@ -70,4 +70,48 @@ function registerUser($email,$password,$role_id)
         }
     }
 
+function findUser($id)
+{
+    global $conn;
+    try
+    {
+        $user = $conn->prepare("SELECT * FROM users WHERE id=?");
+
+        $user->execute([
+            $id
+        ]);
+
+        $result = $user->fetch();
+
+        return $result;
+    }
+    catch(PDOException $e){
+         
+        writeError($e->getMessage());
+    }
+}
+
+function updateUser($email,$password,$role_id,$id)
+{
+    global $conn;
+
+    try
+    {
+        $user = $conn->prepare("UPDATE users SET email=:email,password=:pass,role_id=:role_id WHERE id=:id");
+
+        $user->execute([
+            'email'=>$email,
+            'pass'=>md5($password),
+            'role_id'=>$role_id,
+            'id'=>$id
+        ]);
+
+    }
+    catch(PDOException $e){
+         
+        writeError($e->getMessage());
+    }
+
+}
+
 ?>
