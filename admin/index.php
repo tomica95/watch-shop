@@ -22,6 +22,9 @@
         include "views/pages/register-user.php";
         break;
 
+        case 'categories':
+        include "views/pages/categories.php";
+
         }  
     
         }
