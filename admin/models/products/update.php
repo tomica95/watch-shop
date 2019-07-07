@@ -8,8 +8,10 @@ if(isset($_SESSION['user'])&&$_SESSION['user']->role_id=="1")
     {
         require_once "../../../config/connection.php";
 
-        $name = $_POST['product-name'];
+        require_once "product_functions.php";
 
+        $prname = $_POST['product-name'];
+        
         $price = $_POST['price'];
 
         $code = $_POST['code'];
@@ -22,20 +24,7 @@ if(isset($_SESSION['user'])&&$_SESSION['user']->role_id=="1")
 
         $id = $_POST['id'];
 
-        try
-            {
-
-                $query = $conn->prepare("UPDATE products SET name=:name,code=:code,price=:price,description=:desc,cat_id=:cat_id,date=:date WHERE id=:id");
-
-                $query->execute([
-                    "name"=>$name,
-                    "code"=>$code,
-                    "price"=>$price,
-                    "desc"=>$description,
-                    "cat_id"=>$category_id,
-                    "date"=>$date,
-                    "id"=>$id
-                ]);
+        
 
                 $file_name = $_FILES['picture']['name'];
                 $tmp_Location = $_FILES['picture']['tmp_name'];
@@ -97,18 +86,9 @@ if(isset($_SESSION['user'])&&$_SESSION['user']->role_id=="1")
             
                     if(move_uploaded_file($tmp_Location, '../../../'.$srcOriginalPicture)){
                         
-            
-                            
-                            $update = $conn->prepare("UPDATE pictures SET big=:big,small=:small WHERE product_id=:product_id");
-                            
-                            $update->execute([
-                                "big"=>$srcOriginalPicture,
-                                "small"=>$srcNewPicture,
-                                "product_id"=>$id
-                            ]);
-            
-                            
-                            
+                        updateProduct($prname,$price,$code,$description,$category_id,$date,$id);
+
+                        updatePicture($srcOriginalPicture,$srcNewPicture,$id);                
                          
                     }
             
@@ -116,11 +96,8 @@ if(isset($_SESSION['user'])&&$_SESSION['user']->role_id=="1")
                     imagedestroy($permanent_picture);
                     imagedestroy($newPicture);
                 }
-            }
-            catch(PDOException $e){
-         
-                writeError($e->getMessage());
-            }
+            
+            
 
             header('Location:../../index.php?page=products');
     }

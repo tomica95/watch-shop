@@ -107,7 +107,62 @@ function findProduct($id)
 
 function allCategories()
 {
+    try{
+
     return executeQuery("SELECT * FROM categories");
+
+    }
+    catch(PDOException $e){
+         
+        writeError($e->getMessage());
+    }
+
+}
+
+function updateProduct($name,$price,$code,$description,$category_id,$date,$id)
+{
+    try
+    {
+        global $conn;
+
+        $query = $conn->prepare("UPDATE products SET name=:name,code=:code,price=:price,description=:desc,cat_id=:cat_id,date=:date WHERE id=:id");
+
+                $query->execute([
+                    "name"=>$name,
+                    "code"=>$code,
+                    "price"=>$price,
+                    "desc"=>$description,
+                    "cat_id"=>$category_id,
+                    "date"=>$date,
+                    "id"=>$id
+                ]);
+    }
+    catch(PDOException $e){
+         
+        writeError($e->getMessage());
+    }
+    
+}
+
+function updatePicture($srcOriginalPicture,$srcNewPicture,$id)
+{
+    try
+    {
+        global $conn; 
+        
+        $update = $conn->prepare("UPDATE pictures SET big=:big,small=:small WHERE product_id=:product_id");
+                            
+                            $update->execute([
+                                "big"=>$srcOriginalPicture,
+                                "small"=>$srcNewPicture,
+                                "product_id"=>$id
+                            ]);
+    }
+    catch(PDOException $e){
+         
+        writeError($e->getMessage());
+    }
+    
 }
 
 
