@@ -37,6 +37,10 @@
         include "views/pages/products.php";
         break;
 
+        case "insert-product":
+        include "views/pages/insert-product.php";
+        break;
+
         }  
     
         }

@@ -13,9 +13,10 @@
                                     <th scope="col">Id</th>
                                     <th scope="col">Product name</th>
                                     <th scope="col">Code of product</th>
-                                    <th scope="col">Brand</th>
+                                    <th scope="col">Description</th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Picture</th>
+                                    <th scope="col">Brand</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -28,11 +29,12 @@
                             ?>
                                 <tr>
                                     <th scope="row"><?=$product->productID?></th>
-                                    <td><?=$product->name?></td>
+                                    <td><?=$product->productName?></td>
                                     <td><?=$product->code?></td>
                                     <td><?=$product->description?></td>
                                     <td>$ <?=$product->price?></td>
-                                    <td><img src="../assets/img/<?=$product->small?>" width="50" height="50"></td>
+                                    <td><img src="../<?=$product->small?>" width="50" height="50"></td>
+                                    <td><?=$product->categoryName?></td>
                                     <td>
                                     <button type="submit" class="btn btn-primary btn-sm update-product" data-id="<?=$product->productID?>">
                                      <i class="fa fa-dot-circle-o"></i> Update
