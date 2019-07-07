@@ -32,6 +32,7 @@
     <script src="assets/myScripts/jquery.min.js"></script>
     <script src="assets/myScripts/update-user.js"></script>
     <script src="assets/myScripts/update-category.js"></script>
+    <script src="assets/myScripts/update-product.js"></script>
 
 </body>
 

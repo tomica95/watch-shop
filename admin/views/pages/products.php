@@ -56,7 +56,7 @@
                     </div>
                     
                 </div>
-                <div id="user-update"></div>
+                <div id="product-update"></div>
             </div>
 
             </div>

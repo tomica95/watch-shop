@@ -84,5 +84,31 @@ function deletePictureofProduct($id)
     }
 }
 
+function findProduct($id)
+{
+    global $conn;
+    try
+    {
+        $product = $conn->prepare("SELECT * FROM products WHERE id=?");
+
+        $product->execute([
+            $id
+        ]);
+
+        $result = $product->fetch();
+
+        return $result;
+    }
+    catch(PDOException $e){
+         
+        writeError($e->getMessage());
+    }
+}
+
+function allCategories()
+{
+    return executeQuery("SELECT * FROM categories");
+}
+
 
 ?>

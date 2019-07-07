@@ -16,11 +16,11 @@
         <div class="col-sm-6">
           <div class="thumbnails">
 
-            <div><a class="thumbnail" href="assets/img/<?=$product->small?>" title="<?=$product->name?>"><img src="assets/img/<?=$product->small?>" title="<?=$product->productName?>" alt="<?=$product->productName?>" /></a></div>
+            <div><a class="thumbnail" href="<?=$product->small?>" title="<?=$product->name?>"><img src="<?=$product->small?>" title="<?=$product->productName?>" alt="<?=$product->productName?>" /></a></div>
 
             <div id="product-thumbnail" class="owl-carousel">
               <div class="item">
-                <div class="image-additional"><a class="thumbnail  " href="assets/img/<?=$product->big?>" title="<?=$product->productName?>"> <img src="assets/img/<?=$product->big?>" title="<?=$product->productName?>" alt="<?=$product->productName?>" /></a></div>
+                <div class="image-additional"><a class="thumbnail  " href="<?=$product->big?>" title="<?=$product->productName?>"> <img src="<?=$product->big?>" title="<?=$product->productName?>" alt="<?=$product->productName?>" /></a></div>
               </div>
               
             </div>

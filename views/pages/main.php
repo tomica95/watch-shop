@@ -46,7 +46,7 @@
             <!-- tab latest one item -->
               <div class="item">
                 <div class="product-thumb transition">
-                  <div class="image product-imageblock"> <a href="index.php?page=product&id=<?=$product->productID?>"><img src="assets/img/<?=$product->small?>" alt="<?=$product->name?>" title="<?=$product->name?>" class="img-responsive" /> </a>
+                  <div class="image product-imageblock"> <a href="index.php?page=product&id=<?=$product->productID?>"><img src="<?=$product->small?>" alt="<?=$product->name?>" title="<?=$product->name?>" class="img-responsive" /> </a>
                   </div>
                   <div class="caption product-detail">
                     <h4 class="product-name"><a href="" title="<?=$product->name?>"><?=$product->name?></a></h4>
@@ -74,7 +74,7 @@
           ?>
           <div class="item product-slider-item">
             <div class="product-thumb transition">
-              <div class="image product-imageblock"> <a href="index.php?page=product&id=<?=$pr->productID?>"> <img src="assets/img/<?=$pr->small?>" alt="<?=$pr->name?>" title="<?=$pr->name?>" class="img-responsive" /> </a>
+              <div class="image product-imageblock"> <a href="index.php?page=product&id=<?=$pr->productID?>"> <img src="<?=$pr->small?>" alt="<?=$pr->name?>" title="<?=$pr->name?>" class="img-responsive" /> </a>
               </div>
               <div class="caption product-detail">
                 <h4 class="product-name"><a href="index.php?page=product&id=<?=$pr->productID?>" title="<?=$pr->name?>"><?=$pr->name?></a></h4>
