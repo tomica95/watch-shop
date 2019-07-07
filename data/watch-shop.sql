@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 28, 2019 at 05:10 AM
+-- Generation Time: Jul 08, 2019 at 12:58 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -102,9 +102,12 @@ CREATE TABLE `pictures` (
 --
 
 INSERT INTO `pictures` (`id`, `big`, `small`, `product_id`) VALUES
-(1, 'fossil.jpg', 'fossil.jpg', 1),
-(2, 'citizen.jpg', 'citizen.jpg', 2),
-(3, 'tissot.jpg', 'tissot.jpg', 3);
+(17, 'assets/img/1562536967fossil 1.jpg', 'assets/img/small/1562536967fossil 1.jpg', 14),
+(18, 'assets/img/1562537044fossil 2.jpg', 'assets/img/small/1562537044fossil 2.jpg', 15),
+(19, 'assets/img/1562537415citizen 2.jpg', 'assets/img/small/1562537415citizen 2.jpg', 16),
+(20, 'assets/img/1562537493citizen.jpg', 'assets/img/small/1562537493citizen.jpg', 17),
+(21, 'assets/img/1562537619tissot3.jpg', 'assets/img/small/1562537619tissot3.jpg', 18),
+(24, 'assets/img/1562539768citizen 2.jpg', 'assets/img/small/1562539768citizen 2.jpg', 21);
 
 -- --------------------------------------------------------
 
@@ -127,9 +130,12 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `code`, `description`, `price`, `cat_id`, `date`) VALUES
-(1, 'Fossil', '021', 'Fossil', 200, 1, '2019-06-25'),
-(2, 'Citizen', '536', 'Citizen', 150, 2, '2019-06-10'),
-(3, 'Tissot', '56', 'Tissot', 400, 3, '2019-06-21');
+(14, 'Fossil ES', '4452', 'Fossil woman`s watch', 120, 1, '2019-07-08'),
+(15, 'Fossil NFS ', '4526', 'Fossil woman`s watch', 170, 1, '2019-07-08'),
+(16, 'Citizen Sports', '0021', 'Citizen Sports Man`s watch', 200, 2, '2019-07-08'),
+(17, 'Citizen Super Titanium', '44482', 'Citizen Super Titanium man`s watch', 300, 2, '2019-07-08'),
+(18, 'Tissot Super Gold', '00350', 'Tissot Super Gold woman`s watch', 400, 3, '2019-07-08'),
+(21, 'proizvod za testiranje', '23123', 'tester', 222, 2, '2019-07-08');
 
 -- --------------------------------------------------------
 
@@ -169,9 +175,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `password`, `logged`, `role_id`) VALUES
-(1, 'nadja@gmail.com', 'c4b8d68ffc0ba89404f78dd3169b7d09', 0, 2),
-(4, 'toma@gmail.com', '219f7aace9f49116b63dc47dd1062b28', 0, 2),
-(5, 'tomica@gmail.com', 'b2b7fedebf982ca608c1f79d94c5b189', 0, 2);
+(10, 'admin@gmail.com', 'dadd7cea5716af76ba44bf1d9b3db8e1', 1, 1),
+(14, 'nikola@gmail.com', '7a1b4f6685b94435fca7c156a909b35f', 0, 1);
 
 --
 -- Indexes for dumped tables
@@ -233,7 +238,7 @@ ALTER TABLE `author`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `menu`
@@ -245,13 +250,13 @@ ALTER TABLE `menu`
 -- AUTO_INCREMENT for table `pictures`
 --
 ALTER TABLE `pictures`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `roles`
@@ -263,7 +268,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
