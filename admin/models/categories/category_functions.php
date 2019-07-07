@@ -39,5 +39,45 @@ function insertCategory($name)
     
 }
 
+function findCategory($id)
+{
+    global $conn;
+    try
+    {
+        $category = $conn->prepare("SELECT * FROM categories WHERE id=?");
+
+        $category->execute([
+            $id
+        ]);
+
+        $result = $category->fetch();
+
+        return $result;
+    }
+    catch(PDOException $e){
+         
+        writeError($e->getMessage());
+    }
+}
+
+function updateCategory($id,$name)
+{
+    global $conn;
+
+    try
+    {
+        $update = $conn->prepare("UPDATE categories SET name=:name WHERE id=:id");
+
+        $update->execute([
+            "name"=>$name,
+            "id"=>$id
+        ]);
+    }
+    catch(PDOException $e){
+         
+        writeError($e->getMessage());
+    }
+}
+
 
 ?>

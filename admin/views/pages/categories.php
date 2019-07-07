@@ -25,7 +25,7 @@
                                     <td><?=$category->name?></td>
                                     
                                     <td>
-                                    <button type="submit" class="btn btn-primary btn-sm">
+                                    <button type="submit" data-id="<?=$category->id?>" class="btn btn-primary btn-sm update-category">
                                      <i class="fa fa-dot-circle-o"></i> Update
                                     </button>
                                     </td>
@@ -43,6 +43,7 @@
                         </table>
                     </div>
                 </div>
+                <div id="category-update"></div>
             </div>
 
             </div>
