@@ -20,8 +20,16 @@
       <div class="col-sm-3 footer-block">
         <h5 class="footer-title">My Account</h5>
         <ul class="list-unstyled ul-wrapper">
+        <?php if(!isset($_SESSION['user'])):?>
           <li><a href="index.php?page=login">Sign in</a></li>
           <li><a href="index.php?page=register">Register</a></li>
+            <?php endif; ?>
+            <?php if(isset($_SESSION['user'])): ?>
+                    <li><a href="models/auth/logout.php">Logout</a></li>
+                    <?php if($_SESSION['user']->role_id=="1"):?>
+                      <li><a href="admin/index.php">Admin panel</a></li>
+                    <?php endif; ?>
+                    <?php endif; ?>
         </ul>
       </div>
       <div class="col-sm-3 footer-block">

@@ -40,9 +40,16 @@
             <li>
               <label>Brand:</label>
               <span> <a href="#"><?=$product->categoryName?></a></span></li>
+              <?php if(isset($_SESSION['user'])): ?>
             <li>
               <label>Product Code:</label>
               <span> <?=$product->code?></span></li>
+            <?php endif; ?>
+            <?php if(!isset($_SESSION['user'])): ?>
+            <li>
+              <label>Product Code:</label>
+              <span>Please log in for product code...</span></li>
+            <?php endif; ?>
           </ul>
           <hr>
           <p class="product-desc"><?=$product->description?></p>

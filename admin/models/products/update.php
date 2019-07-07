@@ -24,6 +24,41 @@ if(isset($_SESSION['user'])&&$_SESSION['user']->role_id=="1")
 
         $id = $_POST['id'];
 
+        $greske = [];
+
+        if(empty($prname)){
+            $greske[]="Please insert name of product";
+        }
+        if(empty($code)){
+            $greske[]="Please insert code";
+        }
+        else if(!is_numeric($code))
+        {
+            $greske[]="Code must be number";
+        }
+        if(empty($description)){
+            $greske[]="Please insert description of product";
+        }
+        if(empty($price)){
+            $greske[]="Please insert price of product";
+        }
+        else if(!is_numeric($price))
+        {
+            $greske[]="Your price must be number";
+        }
+        if(!is_numeric($category_id))
+        {
+            $greske[]="You must enter the category";
+        }
+        if(count($greske)>0){
+            echo "<ul>";
+            foreach($greske as $error){
+                echo "<li>".$error."</li>";
+            }
+            echo "</ul>";
+        }
+        else
+        {
         
 
                 $file_name = $_FILES['picture']['name'];
@@ -101,6 +136,7 @@ if(isset($_SESSION['user'])&&$_SESSION['user']->role_id=="1")
 
             header('Location:../../index.php?page=products');
     }
+}
 }
 
 ?>
