@@ -48,5 +48,41 @@ function insertPicture($srcOriginalPicture, $srcNewPicture, $product_id){
     }
 }
 
+function deleteProduct($id)
+{
+    try{
+        global $conn;
+
+        $delete = $conn->prepare("DELETE FROM products WHERE id=?");
+
+        $delete->execute([
+            $id
+            ]);
+
+        }
+        catch(Exception $e){
+ 
+            writeError($e->getMessage());
+        }
+}
+
+function deletePictureofProduct($id)
+{
+    try{
+        global $conn;
+
+        $delete = $conn->prepare("DELETE FROM pictures WHERE product_id=?");
+
+        $delete->execute([
+            $id
+            ]);
+
+        }
+        catch(Exception $e){
+ 
+            writeError($e->getMessage());
+    }
+}
+
 
 ?>

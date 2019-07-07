@@ -41,7 +41,7 @@
                                     </button>
                                     </td>
                                     <td>
-                                    <form method="POST" action="models/users/delete.php">
+                                    <form method="POST" action="models/products/delete.php">
                                     <button type="submit" class="btn btn-danger btn-sm">
                                     <i class="fa fa-ban"></i> Delete
                                     </button>

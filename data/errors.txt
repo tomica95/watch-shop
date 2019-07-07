@@ -12,3 +12,4 @@
 07.07.2019 21:20:06	SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'code' cannot be null
 07.07.2019 21:20:53	SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'code' cannot be null
 07.07.2019 21:20:54	SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'code' cannot be null
+07.07.2019 22:53:27	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product_id' in 'where clause'
