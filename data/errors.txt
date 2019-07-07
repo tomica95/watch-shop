@@ -4,3 +4,4 @@
 25.06.2019 11:59:39	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECTT * FROM menu' at line 1
 25.06.2019 11:59:49	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECTT * FROM menu' at line 1
 25.06.2019 11:59:57	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECTT * FROM menu' at line 1
+07.07.2019 20:43:01	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'watch-shop.picturess' doesn't exist

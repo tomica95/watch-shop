@@ -23,6 +23,13 @@
                             <li><i class="fa fa-table"></i><a href="index.php?page=insert-category">Add new category</a></li>
                         </ul>
                     </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Products</a>
+                        <ul class="sub-menu children dropdown-menu">
+                                <li><i class="fa fa-table"></i><a href="index.php?page=products">Show products</a></li>
+                            <li><i class="fa fa-table"></i><a href="index.php?page=insert-product">Add new product</a></li>
+                        </ul>
+                    </li>
                     
 
                     <!-- KRAJ -->

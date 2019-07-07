@@ -33,6 +33,10 @@
         include "views/pages/insert-category.php";
         break;
 
+        case "products":
+        include "views/pages/products.php";
+        break;
+
         }  
     
         }
