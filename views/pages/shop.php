@@ -48,8 +48,8 @@
 
           include "models/products/functions.php";
 
-          $products = getAllProductsWithPicture();
-
+          $limit =  isset($_GET['limit'])? $_GET['limit'] : 0;
+          $products = getProductsWithPicturePag($limit);
           foreach($products as $product):
         
         ?>
@@ -79,9 +79,12 @@
         
         <div class="pagination-inner">
           <ul class="pagination">
-            <li class="active"><span>1</span></li>
-            <li><a href="index.php?page=shop">2</a></li>
-            
+          <?php 
+          $number_of_products = getPaginationCount();
+
+						for($i=0; $i<$number_of_products; $i++): ?>
+            <li><a href="#" class="pag" data-limit="<?=$i ?>"><?=$i+1?></a></li>
+          <?php endfor; ?>
           </ul>
         </div>
       </div>

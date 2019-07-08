@@ -6,6 +6,36 @@ $(document).ready(function(){
 
     $('.search').on('keyup',searchByName);
 
+    $('.pagination').on('click','.pag',pagination);
+
+    function pagination(e){
+
+        e.preventDefault();
+
+        let limit = $(this).data('limit');
+
+        $.ajax({
+            url:"models/products/pagination.php",
+            method:"GET",
+            dataType:"JSON",
+            data:
+            {
+                limit
+            },
+            success:function(data)
+            {
+
+                printProducts(data.products);
+                printPagination(data.pagination);
+                
+            },
+            error:function(error){
+
+                $('#products').html(error);
+            }
+        })
+    }
+
     function filter(){
 
         let cat_id = $(this).data('id');
@@ -127,5 +157,21 @@ $(document).ready(function(){
             }
         })
     }
+
+    function printPagination(number)
+    {
+        let html = ``;
+
+        for(let i=0; i<number; i++)
+        {
+            html+=`
+                <li><a href="#" class="pag" data-limit="${i}">${i+1}</a></li>
+            `;
+        }
+
+        $('.pagination').html(html);
+    }
+
+   
 
 })
