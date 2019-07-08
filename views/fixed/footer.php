@@ -70,6 +70,6 @@ $('.parallax').parally({offset: -40});
 </script>
 <!-- my scripts -->
 
-<script src="assets/js/filter-sort.js"></script>
+<script src="assets/js/filter-sort-pagination.js"></script>
 </body>
 </html>
