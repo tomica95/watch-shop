@@ -123,7 +123,7 @@
         try{
         global $conn;
         
-        $select = $conn->prepare("SELECT * FROM products p INNER JOIN pictures i ON p.id=i.product_id LIMIT :limit, :offset");
+        $select = $conn->prepare("SELECT *,p.id as productID FROM products p INNER JOIN pictures i ON p.id=i.product_id LIMIT :limit, :offset");
 
         $limit = ((int) $limit)* PRODUCT_ONPAGE;
 

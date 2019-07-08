@@ -41,6 +41,14 @@
         include "views/pages/insert-product.php";
         break;
 
+        case "logs":
+        include "views/pages/logs.php";
+        break;
+
+        case "loggedIn":
+        include "views/pages/loggedin.php";
+        break;
+
         }  
     
         }

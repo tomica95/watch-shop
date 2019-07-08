@@ -26,5 +26,16 @@ function writeError($error){
     fwrite($file, $string);
     fclose($file);
 }
+function writeAccess(){
+
+    $file = fopen(BASE_URL ."data/log.txt","a");
+
+    $text = date("d.m.Y") . "\t" . basename($_SERVER['REQUEST_URI']) . "\t" . $_SERVER['REMOTE_ADDR'] . "\n";
+
+    fwrite($file, $text);
+    fclose($file);
+
+}
+writeAccess();
 
 

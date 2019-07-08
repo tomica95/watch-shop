@@ -30,6 +30,14 @@
                             <li><i class="fa fa-table"></i><a href="index.php?page=insert-product">Add new product</a></li>
                         </ul>
                     </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Logs</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-table"></i><a href="index.php?page=logs">Show logs</a></li>
+                            <li><i class="fa fa-table"></i><a href="index.php?page=loggedIn">Number of logged-in users in this moment</a></li>
+                            
+                        </ul>
+                    </li>
                     
 
                     <!-- KRAJ -->
