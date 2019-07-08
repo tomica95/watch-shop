@@ -1,9 +1,15 @@
 <div class="container">
   <div class="mainbanner">
   <div id="main-banner" class="owl-carousel home-slider">
-    <div class="item"> <a href="#"><img src="assets/image/banners/Main-Banner1.jpg" alt="main-banner1" class="img-responsive" /></a> </div>
-    <div class="item"> <a href="#"><img src="assets/image/banners/Main-Banner2.jpg" alt="main-banner2" class="img-responsive" /></a> </div>
-    <div class="item"> <a href="#"><img src="assets/image/banners/Main-Banner3.jpg" alt="main-banner3" class="img-responsive" /></a> </div>
+    <?php 
+      include "models/products/functions.php";
+
+      $banners = banner();
+
+      foreach($banners as $banner):
+    ?>
+    <div class="item"> <a href="#"><img src="<?=$banner->src?>" alt="<?=$banner->alt?>" class="img-responsive" /></a> </div>
+      <?php endforeach; ?>
   </div>
 </div>
 </div>
@@ -36,7 +42,7 @@
             <div id="latest-slidertab" class="row owl-carousel product-slider">
             <?php 
 
-                include "models/products/functions.php";
+                
 
                 $latest = latestProducts();
 
@@ -46,7 +52,7 @@
             <!-- tab latest one item -->
               <div class="item">
                 <div class="product-thumb transition">
-                  <div class="image product-imageblock"> <a href="index.php?page=product&id=<?=$product->productID?>"><img src="<?=$product->small?>" alt="<?=$product->name?>" title="<?=$product->name?>" class="img-responsive" /> </a>
+                  <div class="image product-imageblock"> <a href="index.php?page=product&id=<?=$product->productID?>"><img src="<?=$product->small?>" alt="<?=$product->name?>" title="<?=$product->name?>" class="img-responsive" height="120" /> </a>
                   </div>
                   <div class="caption product-detail">
                     <h4 class="product-name"><a href="" title="<?=$product->name?>"><?=$product->name?></a></h4>

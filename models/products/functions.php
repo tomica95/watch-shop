@@ -72,6 +72,19 @@
 
     }
 
+    function banner(){
+
+        try
+        {
+            return executeQuery("SELECT * FROM banner");
+        }
+        catch(PDOException $e){
+         
+            writeError($e->getMessage());
+        }
+
+    }
+
     function latestProducts(){
 
         try {

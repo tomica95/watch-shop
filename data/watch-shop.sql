@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 08, 2019 at 12:58 AM
+-- Generation Time: Jul 08, 2019 at 03:16 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -42,6 +42,27 @@ CREATE TABLE `author` (
 
 INSERT INTO `author` (`id`, `name_surname`, `description`, `src`, `alt`) VALUES
 (1, 'Ime i prezime autora', 'Opis o autoru', 'slika.jpg', 'Ime prezime autora');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `banner`
+--
+
+CREATE TABLE `banner` (
+  `id` int(11) NOT NULL,
+  `src` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `alt` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `banner`
+--
+
+INSERT INTO `banner` (`id`, `src`, `alt`) VALUES
+(4, 'assets/img/banner1.jpg', 'Main banner'),
+(5, 'assets/img/banner2.png', 'Main banner'),
+(6, 'assets/img/banner4.jpg', 'Main banner');
 
 -- --------------------------------------------------------
 
@@ -130,7 +151,7 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `code`, `description`, `price`, `cat_id`, `date`) VALUES
-(14, 'Fossil ES', '4452', 'Fossil woman`s watch', 120, 1, '2019-07-08'),
+(14, 'Fossil ES', '4452', 'Fossil woman`s watch', 120, 1, '2019-07-02'),
 (15, 'Fossil NFS ', '4526', 'Fossil woman`s watch', 170, 1, '2019-07-08'),
 (16, 'Citizen Sports', '0021', 'Citizen Sports Man`s watch', 200, 2, '2019-07-08'),
 (17, 'Citizen Super Titanium', '44482', 'Citizen Super Titanium man`s watch', 300, 2, '2019-07-08'),
@@ -189,6 +210,12 @@ ALTER TABLE `author`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `banner`
+--
+ALTER TABLE `banner`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `categories`
 --
 ALTER TABLE `categories`
@@ -235,10 +262,16 @@ ALTER TABLE `author`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `banner`
+--
+ALTER TABLE `banner`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `menu`
