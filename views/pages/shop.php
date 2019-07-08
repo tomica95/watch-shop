@@ -80,7 +80,7 @@
         <div class="pagination-inner">
           <ul class="pagination">
           <?php 
-          $number_of_products = getPaginationCount();
+          $number_of_products = countPag();
 
 						for($i=0; $i<$number_of_products; $i++): ?>
             <li><a href="#" class="pag" data-limit="<?=$i ?>"><?=$i+1?></a></li>

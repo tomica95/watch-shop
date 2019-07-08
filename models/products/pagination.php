@@ -13,7 +13,7 @@
 
         $products = getProductsWithPicturePag($limit);
 
-        $num_of_products = getPaginationCount();
+        $num_of_products = countPag();
 
 
         echo json_encode([

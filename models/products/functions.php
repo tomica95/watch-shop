@@ -158,7 +158,7 @@
         }
     }
 
-    function getPaginationCount()
+    function countPag()
     {
         try{
         $number = getNumOfProducts();
