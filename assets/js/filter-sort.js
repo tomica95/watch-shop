@@ -4,6 +4,8 @@ $(document).ready(function(){
 
     $('#input-sort').on('change',sort);
 
+    $('.search').on('keyup',searchByName);
+
     function filter(){
 
         let cat_id = $(this).data('id');
@@ -72,7 +74,7 @@ $(document).ready(function(){
             <div class="product-thumb">
           <div class="image product-imageblock"> 
             <a href="index.php?page=product&id=${product.productID}">
-            <img src="assets/img/${product.small}" alt="${product.name}" title="${product.name}" class="img-responsive">
+            <img src="${product.small}" alt="${product.name}" title="${product.name}" class="img-responsive">
             </a>
           </div>
         
@@ -89,5 +91,41 @@ $(document).ready(function(){
     
     }
     
+    function searchByName(){
+
+        let string = $(this).val();
+
+        $.ajax({
+            url:"models/products/search.php",
+            method:"POST",
+            dataType:"json",
+            data:
+            {
+                string
+            },
+            success:function(products)
+            {
+                
+                if(products.length=="0")
+                {
+                    $text = "We do not have watch with name like that";
+
+                    $('#products').html($text);
+                }
+                else
+                {
+                    printProducts(products);
+                }
+
+                
+                
+                
+            },
+            error:function(error){
+
+                $('#products').html(error);
+            }
+        })
+    }
 
 })

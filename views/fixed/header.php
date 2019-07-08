@@ -25,10 +25,12 @@
                 </li>
                
               </ul>
+              <?php if(isset($_GET['page'])=="shop"): ?>
               <div class="search-box">
-                <input class="input-text" placeholder="Search By Products.." type="text">
+                <input class="input-text search" placeholder="Search product by name.." type="text">
                 <button class="search-btn"><i class="fa fa-search"></i></button>
               </div>
+            <?php endif; ?>
             </div>
           </div>
         </div>
