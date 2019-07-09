@@ -26,18 +26,7 @@ $(document).ready(function(){
                                                                         <input type="email" value="${data.user.email}" id="email" name="email" placeholder="Email" class="form-control">
                                                                     </div>
                                                                 </div>
-                                                                <div class="form-group">
-                                                                    <div class="input-group">
-                                                                        <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
-                                                                        <input type="password" value="${data.user.password}" name="password" placeholder="Password" class="form-control">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <div class="input-group">
-                                                                        <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
-                                                                        <input type="password" value="${data.user.password}" name="confirm-password" placeholder="Confirm password" class="form-control">
-                                                                    </div>
-                                                                </div>
+                                                                
                                                                 <div class="row form-group">
                                                                     <div class="col col-md-3"><label for="select" class=" form-control-label">Role of user</label></div>
                                                                     <div class="col-12 col-md-9">

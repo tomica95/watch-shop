@@ -91,17 +91,16 @@ function findUser($id)
     }
 }
 
-function updateUser($email,$password,$role_id,$id)
+function updateUser($email,$role_id,$id)
 {
     global $conn;
 
     try
     {
-        $user = $conn->prepare("UPDATE users SET email=:email,password=:pass,role_id=:role_id WHERE id=:id");
+        $user = $conn->prepare("UPDATE users SET email=:email,role_id=:role_id WHERE id=:id");
 
         $user->execute([
             'email'=>$email,
-            'pass'=>md5($password),
             'role_id'=>$role_id,
             'id'=>$id
         ]);
