@@ -35,6 +35,9 @@
         include "views/pages/product.php";
         break;
 
+        default:
+        		include "views/fixed/forbidden.php";
+
       }  
     }
     else
