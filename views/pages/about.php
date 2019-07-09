@@ -8,7 +8,7 @@
 <div class="container">
   <div class="row">
     <div class="wwd">
-      <div class="col-sm-6"><img class="img-responsive" src="assets/image/blog/blog_4.jpg" alt="<?=$author->alt?>"></div>
+      <div class="col-sm-6"><img class="img-responsive" src="<?=$author->src?>" alt="<?=$author->alt?>" height="350"></div>
       <div class="col-sm-6">
         <div class="column-inner ">
           <div class="wrapper">
