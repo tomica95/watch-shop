@@ -50,6 +50,11 @@ $(document).ready(function(){
             success:function(products){
 
                 printProducts(products);
+                let number=products.length;
+                number = Math.ceil(number/3);
+                printPagination(number);
+                
+                
 
             },
             error:function(error){
@@ -76,6 +81,11 @@ $(document).ready(function(){
             success:function(products){
 
                 printProducts(products);
+                let number=products.length;
+                number = Math.ceil(number/3);
+                printPagination(number);
+
+
             },
             error:function(error){
 
@@ -145,6 +155,9 @@ $(document).ready(function(){
                 else
                 {
                     printProducts(products);
+                    let number=products.length;
+                    number = Math.ceil(number/3);
+                    printPagination(number);
                 }
 
                 
