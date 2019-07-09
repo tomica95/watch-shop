@@ -34,9 +34,14 @@ $(document).ready(function(){
                     <input type="text" name="description"  tabindex="2" class="form-control" placeholder="Description" value="${data.product.description}">
                   </div>
 
-                  <input type="hidden" name="id" value="${data.product.id}">
+                  <input type="hidden" name="id" value="${data.product.productID}">
 
                   <input type="hidden" name="category_id" value="${data.product.cat_id}">
+
+                  <div class="input-field">
+                    <img src="../${data.product.small}" width="80" height="60">
+                  
+                  </div>
 
                   <div class="input-field">
                           <button type="button" onclick="document.getElementById('productPicture').click()" class="btn btn-info">Add picture to product</button>

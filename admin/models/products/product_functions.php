@@ -89,7 +89,7 @@ function findProduct($id)
     global $conn;
     try
     {
-        $product = $conn->prepare("SELECT * FROM products WHERE id=?");
+        $product = $conn->prepare("SELECT *,p.id AS productID FROM products p JOIN pictures s ON p.id=s.product_id WHERE p.id=?");
 
         $product->execute([
             $id
@@ -124,7 +124,7 @@ function updateProduct($name,$price,$code,$description,$category_id,$date,$id)
     try
     {
         global $conn;
-
+        
         $query = $conn->prepare("UPDATE products SET name=:name,code=:code,price=:price,description=:desc,cat_id=:cat_id,date=:date WHERE id=:id");
 
                 $query->execute([
@@ -136,6 +136,7 @@ function updateProduct($name,$price,$code,$description,$category_id,$date,$id)
                     "date"=>$date,
                     "id"=>$id
                 ]);
+                
     }
     catch(PDOException $e){
          

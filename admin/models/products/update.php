@@ -59,7 +59,14 @@ if(isset($_SESSION['user'])&&$_SESSION['user']->role_id=="1")
         }
         else
         {
-        
+            
+                if(empty($_FILES['picture']['name']))
+                {
+                    
+                    updateProduct($prname,$price,$code,$description,$category_id,$date,$id);
+                    header('Location:../../index.php?page=products');
+                }
+
 
                 $file_name = $_FILES['picture']['name'];
                 $tmp_Location = $_FILES['picture']['tmp_name'];
@@ -120,6 +127,7 @@ if(isset($_SESSION['user'])&&$_SESSION['user']->role_id=="1")
                     $srcOriginalPicture = 'assets/img/'.$name;
             
                     if(move_uploaded_file($tmp_Location, '../../../'.$srcOriginalPicture)){
+                        
                         
                         updateProduct($prname,$price,$code,$description,$category_id,$date,$id);
 
