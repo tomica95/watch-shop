@@ -37,7 +37,7 @@
           <div class="footer-contact">
             <h5 class="contact-title footer-title">Documentation</h5>
             <ul class="ul-wrapper">
-            <li><a href="#">Documentation</a></li>
+            <li><a href="dokumentacija.pdf">Documentation</a></li>
             </ul>
           </div>
         </div>

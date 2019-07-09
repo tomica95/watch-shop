@@ -30,7 +30,7 @@ $field->value= "Product Name";
 
 $field = $sheet->Range("C1");
 $field->activate;
-$field->value = "Price";
+$field->value = "Code";
 
 $field = $sheet->Range("D1");
 $field->activate;
@@ -38,21 +38,25 @@ $field->value = "Description";
 
 $field = $sheet->Range("E1");
 $field->activate;
+$field->value = "Price";
+
+$field = $sheet->Range("F1");
+$field->activate;
 $field->value = "Category";
 
 //about product
 
 $field = $sheet->Range("A2");
 $field->activate;
-$field->value = "$product->product_id";
+$field->value = "$product->id";
 
 $field = $sheet->Range("B2");
 $field->activate;
-$field->value= "$product->product_name";
+$field->value= "$product->productName";
 
 $field = $sheet->Range("C2");
 $field->activate;
-$field->value = "$ $product->price";
+$field->value = "$ $product->code";
 
 $field = $sheet->Range("D2");
 $field->activate;
@@ -60,9 +64,13 @@ $field->value = "$product->description";
 
 $field = $sheet->Range("E2");
 $field->activate;
-$field->value = "$product->category_name";
+$field->value = "$ $product->price";
 
-// $workbook->_SaveAs("http://localhost/php-shop/data/Product.xlsx", -4143);
+$field = $sheet->Range("F2");
+$field->activate;
+$field->value = "$product->name";
+
+// $workbook->_SaveAs("http://localhost/watch-shop/data/Product.xlsx", -4143);
 // $workbook->Save();
 
 // $workbook->Saved=true;
